@@ -12,7 +12,8 @@ const getState = ({ getStore, setStore, getActions }) => {
 				}
 			]
 
-			//Your data structures, A.K.A Entities
+            //Your data structures, A.K.A Entities
+            //Your data structures, A.K.A Entities
 		},
 		actions: {
 			onDelete: bubu => {
