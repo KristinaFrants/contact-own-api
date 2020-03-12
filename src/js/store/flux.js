@@ -5,20 +5,20 @@ const getState = ({ getStore, setStore, getActions }) => {
 		store: {
 			contacts: [
 				{
-					fullname: "",
-					phone: "",
-					email: "",
-					address: ""
+					username: "",
+					// phone: "",
+					email: ""
+					// address: ""
 				}
 			]
 
-            //Your data structures, A.K.A Entities
-            //Your data structures, A.K.A Entities
+			//Your data structures, A.K.A Entities
+			//Your data structures, A.K.A Entities
 		},
 		actions: {
 			onDelete: bubu => {
 				console.log(bubu);
-				fetch("https://assets.breatheco.de/apis/fake/contact/" + bubu, {
+				fetch("https://3000-b5d2c949-1fea-4f8a-9563-a96e3c82730b.ws-us02.gitpod.io/" + bubu, {
 					method: "delete"
 				})
 					.then(response =>
@@ -31,7 +31,7 @@ const getState = ({ getStore, setStore, getActions }) => {
 					});
 			},
 			loadSomeData: () => {
-				fetch("https://assets.breatheco.de/apis/fake/contact/agenda/kevs_agenda")
+				fetch("https://3000-b5d2c949-1fea-4f8a-9563-a96e3c82730b.ws-us02.gitpod.io/users")
 					.then(function(response) {
 						if (!response.ok) {
 							throw Error(response.statusText);
@@ -48,7 +48,7 @@ const getState = ({ getStore, setStore, getActions }) => {
 			// Remember to use the scope: scope.state.store & scope.setState()
 			AddContact(myObj, props) {
 				console.log(myObj);
-				fetch("https://assets.breatheco.de/apis/fake/contact/", {
+				fetch("https://3000-b5d2c949-1fea-4f8a-9563-a96e3c82730b.ws-us02.gitpod.io", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify(myObj)
@@ -56,7 +56,7 @@ const getState = ({ getStore, setStore, getActions }) => {
 			},
 			EditContact: myObj => {
 				console.log(myObj);
-				fetch("https://assets.breatheco.de/apis/fake/contact/" + myObj.id, {
+				fetch("https://3000-b5d2c949-1fea-4f8a-9563-a96e3c82730b.ws-us02.gitpod.io/userstwo/" + myObj.id, {
 					method: "PUT",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify(myObj)

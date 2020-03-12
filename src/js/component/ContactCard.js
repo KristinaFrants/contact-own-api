@@ -40,7 +40,7 @@ export const ContactCard = props => {
 											</button>
 										</div>
 										<label className="name lead">
-											{contact.full_name} = {contact.id}
+											{contact.username} = {contact.id}
 										</label>
 										<br />
 										<i className="fas fa-map-marker-alt text-muted mr-3" />
@@ -87,10 +87,7 @@ ContactCard.propTypes = {
 	history: PropTypes.object,
 	onOpenModal: PropTypes.func
 };
-/**
- * Define the default values for
- * your component's properties
- **/
+
 ContactCard.defaultProps = {
 	onOpenModal: null
 };

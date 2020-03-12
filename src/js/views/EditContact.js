@@ -15,15 +15,12 @@ export const EditContact = props => {
 	useEffect(
 		contact => {
 			setObjContact({
-				agenda_slug: "kevs_agenda",
-				full_name: name,
-				email: email,
-				phone: phone,
-				address: address
+				username: name,
+				email: email
 			});
 			console.log(name);
 		},
-		[name, email, phone, address]
+		[name, email]
 	);
 
 	return (
