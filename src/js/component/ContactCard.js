@@ -42,10 +42,6 @@ export const ContactCard = props => {
 										<label className="name lead">
 											{contact.username} = {contact.id}
 										</label>
-										<br />
-										<i className="fas fa-map-marker-alt text-muted mr-3" />
-										<span className="text-muted">{contact.address}</span>
-										<br />
 										<span
 											className="fa fa-phone fa-fw text-muted mr-3"
 											data-toggle="tooltip"

@@ -24,6 +24,7 @@ const injectContext = PassedComponent => {
 
 		useEffect(
 			() => {
+                //alternative way to fetch
 				// fetch("https://assets.breatheco.de/apis/fake/contact/agenda/kevs_agenda")
 				// 	.then(function(response) {
 				// 		if (!response.ok) {
